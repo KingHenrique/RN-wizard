@@ -176,6 +176,7 @@ export default class AppIntroSlider extends React.Component {
           {this.props.slides.length > 1 &&
             this.props.slides.map((_, i) => (
               <TouchableOpacity
+                disabled={!this.props.scrollEnabled}
                 key={i}
                 style={[
                   styles.dot,
